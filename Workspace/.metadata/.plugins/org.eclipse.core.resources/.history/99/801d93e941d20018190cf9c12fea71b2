@@ -1,0 +1,631 @@
+package controller;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import javax.swing.JOptionPane;
+
+import model.Cliente;
+import model.Endereco;
+import model.ItemDePedido;
+import model.Notebook;
+import model.Pedido;
+import model.DAO.ClienteDAO;
+import model.DAO.EnderecoDAO;
+import model.DAO.ItemDePedidoDAO;
+import model.DAO.NotebookDAO;
+import model.DAO.PagamentoDAO;
+import model.DAO.PedidoDAO;
+import model.DAO.UsuarioDAO;
+import view.TelaAlterarCadastro;
+import view.TelaCadastroCliente;
+import view.TelaFinalizarPedido;
+import view.TelaLogin;
+import view.TelaMenuPrincipal;
+import view.TelaPedidos;
+import view.TelaSuporte;
+
+public class Controle {
+
+	static double total = 0; // Variável que armazena o total da compra.
+	static int contadorNotebookBD = 0; // Variável que armazena a quantidade de notebooks no BD.
+	static int numeroDePedidos = 0; // Variável que armazena o total de pedidos realizados pelo cliente.
+	boolean aberto = false; // Variável que define se o programa já foi aberto anteriormente.
+	private Cliente cliente; // Variável que define o cliente.
+	private static Endereco endereco; // Variável que define o endereço.
+	private static ItemDePedido item; // Variável que define o item do pedido no carrinho.
+
+	// Carrinho da loja, onde é armazenado todos os produtos.
+	static List<ItemDePedido> itens = new ArrayList<ItemDePedido>();
+	// List que armazena todos os notebooks do banco de dados.
+	static List<Notebook> notebooks = NotebookDAO.buscarTodos();
+	// List que armazena todos os pedidos realizados pelo cliente.
+	static List<Pedido> pedidosDoCliente = new ArrayList<Pedido>();
+
+	// Telas instanciadas.
+	private TelaLogin telaLogin = new TelaLogin();
+	private TelaCadastroCliente telaCadastroCliente = new TelaCadastroCliente();
+	private TelaMenuPrincipal telaMenuPrincipal = new TelaMenuPrincipal();
+	private TelaSuporte telaSuporte = new TelaSuporte();
+	private TelaAlterarCadastro telaAlterarCadastro = new TelaAlterarCadastro();
+	private TelaPedidos telaPedidos = new TelaPedidos();
+	private TelaFinalizarPedido telaFinalizarPedido = new TelaFinalizarPedido();
+
+	public Controle() {
+
+		// Aplicando listeners e exibindo tela de login.
+		this.telaLogin.addCadastroListener(new CadastroListener());
+		this.telaLogin.addLoginListener(new EfetuarLogin());
+
+		this.telaCadastroCliente.addVoltarListener(new VoltarCadastroListener());
+		this.telaCadastroCliente.addCadastrarListener(new RegistarClienteBD());
+
+		this.telaMenuPrincipal.addAlteracaoListener(new AbrirAlteracaoDeCadastro());
+		this.telaMenuPrincipal.addPedidosListener(new AbrirPedidosListener());
+		this.telaMenuPrincipal.addFinalizarListener(new AbrirTelaFinalizarPedidoListener());
+		this.telaMenuPrincipal.addLogoutListener(new Logout());
+		this.telaMenuPrincipal.addSuporteListener(new AbrirSuporteListener());
+
+		this.telaSuporte.addVoltarSuporteListener(new VoltarSuporteListener());
+
+		this.telaAlterarCadastro.addVoltarAlteracaoListener(new FecharAlteracaoDeCadastro());
+		this.telaAlterarCadastro.updateListener(new AlterarCadastroListener());
+
+		this.telaPedidos.addVoltarListener(new FecharTelaPedidosListener());
+
+		this.telaFinalizarPedido.addVoltarSuporteListener(new VoltarTelaFinalizarPedidoListener());
+		this.telaFinalizarPedido.addFinalizarListener(new RegistrarPedidoBD());
+
+		// Exibindo tela de login.
+		this.telaLogin.setVisible(true);
+	}
+
+	/*
+	 * Método main, que inicia o funcionamento do software.
+	 */
+	public static void main(String[] args) {
+
+		new Controle();
+	}
+
+	/*
+	 * Método que valida se o email inserido é real ou não.
+	 */
+	public static boolean validar(String email) {
+
+		boolean isEmailIdValid = false;
+
+		if (email != null && email.length() > 0) {
+
+			String expression = "^[\\w\\.-]+@([\\w\\-]+\\.)+[A-Z]{2,4}$";
+			Pattern pattern = Pattern.compile(expression, Pattern.CASE_INSENSITIVE);
+			Matcher matcher = pattern.matcher(email);
+
+			if (matcher.matches()) {
+
+				isEmailIdValid = true;
+			}
+		}
+
+		return isEmailIdValid;
+	}
+
+	/*
+	 * Método que conta quantos notebooks existem no banco de dados.
+	 */
+	public static int metodoContar() {
+
+		for (int i = 0; i < notebooks.size(); i++) {
+
+			contadorNotebookBD++;
+		}
+
+		return contadorNotebookBD;
+	}
+
+	/*
+	 * Método que adiciona produtos no carrinho.
+	 */
+	public static ItemDePedido addItemDePedido(int qtde, double subtotal, Notebook notebook) {
+
+		item = new ItemDePedido(qtde, subtotal, notebook);
+		itens.add(item);
+
+		return item;
+	}
+
+	/*
+	 * Método que remove produtos no carrinho.
+	 */
+	public static void deletarItem(ItemDePedido item) {
+
+		itens.remove(item);
+	}
+
+	/*
+	 * Método que conta quantos pedidos um cliente tem no banco de dados.
+	 */
+	public static int metodoContarPedidos() {
+
+		for (int i = 0; i < pedidosDoCliente.size(); i++) {
+
+			numeroDePedidos++;
+		}
+
+		return numeroDePedidos;
+	}
+
+	public static String getLogradouro() {
+		return endereco.getLogradouro();
+	}
+
+	public static String getBairro() {
+		return endereco.getBairro();
+	}
+
+	public static String getCidade() {
+		return endereco.getCidade();
+	}
+
+	/*
+	 * Subclasse que abre a tela de suporte e fecha o menu principal.
+	 */
+	class AbrirSuporteListener implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent arg0) {
+
+			telaMenuPrincipal.dispose();
+			telaSuporte.setLocation(telaMenuPrincipal.getLocation());
+			telaSuporte.setVisible(true);
+			telaSuporte.setLocation(telaMenuPrincipal.getLocation());
+		}
+	}
+
+	/*
+	 * Método que fecha a tela suporte e abre o menu principal.
+	 */
+	class VoltarSuporteListener implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent arg0) {
+
+			telaSuporte.dispose();
+			telaMenuPrincipal.setVisible(true);
+		}
+	}
+
+	/*
+	 * Subclasse que cadastra o cliente no banco de dados. Conferindo se todos os
+	 * campos estão preenchidos, e caso já esteja cadastrado o email, cpf ou
+	 * usuario, será disparada uma notificação informando o usuário.
+	 */
+	class CadastroListener implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+
+			telaLogin.dispose();
+			telaCadastroCliente.setVisible(true);
+		}
+	}
+
+	/*
+	 * Subclasse que fecha a tela de cadastro e leva até a tela de login.
+	 */
+	class VoltarCadastroListener implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+
+			telaCadastroCliente.dispose();
+			telaLogin.setVisible(true);
+		}
+	}
+
+	/*
+	 * Subclasse que busca pelo login e senha do cliente no banco de dados. caso não
+	 * seja encontrado será disparada uma notificação informando ao usuário o erro.
+	 * caso contrário, a variável cliente armazenará os dados do cliente encontrado,
+	 * em seguida será fechada a tela de login e aberta a tela do menu do cliente.
+	 */
+	class EfetuarLogin implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent arg0) {
+
+			try {
+
+				cliente = ClienteDAO.buscarPorLoginSenha(telaLogin.getTextField(), telaLogin.getPasswordField());
+				endereco = EnderecoDAO.buscarEndereco(cliente.getCpf());
+				telaMenuPrincipal.setCliente(cliente);
+				telaMenuPrincipal.setVisible(true);
+				telaLogin.dispose();
+				telaLogin.setPasswordField("");
+				telaLogin.setTextField("");
+
+				// verificando se os produtos ja foram exbidos anteriormente.
+				if (aberto == false) {
+
+					aberto = true;
+
+					for (Notebook notebook : notebooks) {
+
+						String img = notebook.getFigura();
+						String titulo = notebook.getDescricao();
+						double preco = notebook.getPrecoUnitario();
+						telaMenuPrincipal.construirProdutos(img, titulo, preco, notebook);
+					}
+				}
+			} catch (NullPointerException e) {
+
+				telaLogin.setErroAoProcurarUsuario();
+			}
+		}
+	}
+
+	/*
+	 * Subclasse que fecha o menu do cliente e abre a tela de login, delogando o
+	 * cliente.
+	 */
+	class Logout implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent arg0) {
+
+			cliente = null;
+			endereco = null;
+			telaPedidos.resetLogout();
+			total = 0;
+			contadorNotebookBD = 0;
+			numeroDePedidos = 0;
+			telaMenuPrincipal.dispose();
+			telaMenuPrincipal.renovarMenu();
+			telaLogin.setVisible(true);
+		}
+	}
+
+	/*
+	 * Subclasse que abre a tela de alteracao de cadastro.
+	 */
+	class AbrirAlteracaoDeCadastro implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent arg0) {
+
+			telaAlterarCadastro.setTextField_2(cliente.getLogin());
+			telaAlterarCadastro.setTextField(cliente.getNome());
+			telaAlterarCadastro.setTextField_8(cliente.getTelefone());
+			telaAlterarCadastro.setTextField_1(cliente.getEmail());
+			telaAlterarCadastro.setTextField_10(cliente.getCpf());
+			telaAlterarCadastro.setTextField_3(endereco.getLogradouro());
+			telaAlterarCadastro.setTextField_4(endereco.getNumero());
+			telaAlterarCadastro.setTextField_5(endereco.getComplemento());
+			telaAlterarCadastro.setTextField_6(endereco.getBairro());
+			telaAlterarCadastro.setTextField_7(endereco.getCidade());
+			telaAlterarCadastro.setTextField_9(endereco.getCep());
+			telaAlterarCadastro.setComboBox(endereco.getEstado());
+			telaMenuPrincipal.setVisible(false);
+			telaAlterarCadastro.setLocation(telaMenuPrincipal.getLocation());
+			telaAlterarCadastro.setVisible(true);
+		}
+	}
+
+	/*
+	 * Subclasse que altera os dados do usuario no BD.
+	 */
+	class AlterarCadastroListener implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent arg0) {
+
+			String senha = telaAlterarCadastro.getPasswordField();
+
+			if (senha == null || senha.trim().equals("")) {
+
+				telaAlterarCadastro.alertarSenhaEmBranco();
+			} else {
+
+				UsuarioDAO.update(senha, cliente.getLogin());
+				ClienteDAO.update(telaAlterarCadastro.getTextField_1(), telaAlterarCadastro.getTextField_8(),
+						cliente.getLogin());
+				EnderecoDAO.update(telaAlterarCadastro.getTextField_3(), telaAlterarCadastro.getTextField_4(),
+						telaAlterarCadastro.getTextField_5(), telaAlterarCadastro.getTextField_6(),
+						telaAlterarCadastro.getTextField_7(), telaAlterarCadastro.getComboBox(),
+						telaAlterarCadastro.getTextField_9(), telaAlterarCadastro.getTextField_10());
+				cliente = ClienteDAO.buscarPorLoginSenha(telaLogin.getTextField(), telaLogin.getPasswordField());
+				endereco = EnderecoDAO.buscarEndereco(cliente.getCpf());
+				telaAlterarCadastro.setPasswordField("");
+				telaAlterarCadastro.sucesso();
+				telaAlterarCadastro.dispose();
+				telaMenuPrincipal.setVisible(true);
+			}
+		}
+	}
+
+	/*
+	 * Subclasse que fecha a tela de alteracao de cadastro.
+	 */
+	class FecharAlteracaoDeCadastro implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent arg0) {
+
+			telaAlterarCadastro.dispose();
+			telaMenuPrincipal.setVisible(true);
+		}
+	}
+
+	/*
+	 * Subclasse que abre a tela de pedidos.
+	 */
+	class AbrirPedidosListener implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent arg0) {
+
+			telaPedidos.renovarPedidos();
+			List<Pedido> pedidos = PedidoDAO.buscarTodos(cliente.getCpf());
+
+			for (Pedido pedido : pedidos) {
+				int numPedido = pedido.getNumeroPedido();
+				double precoPedido = pedido.getValorTotal();
+				telaPedidos.construirProdutos(numPedido, precoPedido);
+			}
+
+			pedidosDoCliente = pedidos;
+			telaMenuPrincipal.setVisible(false);
+			telaPedidos.setLocation(telaMenuPrincipal.getLocation());
+			telaPedidos.setVisible(true);
+		}
+	}
+
+	/*
+	 * Subclasse que fecha a tela de pedidos.
+	 */
+	class FecharTelaPedidosListener implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent arg0) {
+
+			telaPedidos.reset();
+			telaPedidos.dispose();
+			telaMenuPrincipal.setVisible(true);
+
+		}
+	}
+
+	/*
+	 * Subclasse que abre a tela de finalizacao de pedido, pegando o total do
+	 * pedido, se o total for igual zero, não será possiível finalizar.
+	 */
+	class AbrirTelaFinalizarPedidoListener implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent arg0) {
+
+			total = telaMenuPrincipal.getTotal();
+
+			if (total == 0) {
+
+				telaMenuPrincipal.adiconeItens();
+			} else {
+
+				telaMenuPrincipal.setVisible(false);
+				telaFinalizarPedido.setFieldNome(cliente.getNome());
+				telaFinalizarPedido.setFieldEmail(cliente.getEmail());
+				telaFinalizarPedido.setFieldTelefone(cliente.getTelefone());
+				telaFinalizarPedido.setTotal(total);
+				telaFinalizarPedido.setVisible(true);
+			}
+		}
+	}
+
+	/*
+	 * Subclasse que fecha a tela de pedidos.
+	 */
+	class VoltarTelaFinalizarPedidoListener implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent arg0) {
+
+			telaFinalizarPedido.dispose();
+			telaMenuPrincipal.setVisible(true);
+		}
+	}
+
+	/*
+	 * Subclasse que registra o pedido no BD, pegando a forma de pagamento escolhida
+	 * pelo usuário, caso for igual à "Selecione o pagamento" 
+	 */
+	class RegistrarPedidoBD implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent arg0) {
+
+			if (telaFinalizarPedido.getComboBox() == null || telaFinalizarPedido.getComboBox().trim().equals("Selecione o pagamento")) {
+
+				telaFinalizarPedido.escolhaPagamento();
+			} else {
+
+				int dialogResult = telaFinalizarPedido.acionarAlerta();
+
+				if (dialogResult == JOptionPane.YES_OPTION) {
+
+					int idGerado = PedidoDAO.inserir("AGUARDANDO PAGAMENTO", total, cliente.getCpf(),
+							endereco.getIdEndereco());
+					PagamentoDAO.inserir(telaFinalizarPedido.getComboBox(), total, idGerado);
+
+					for (ItemDePedido itemDePedido : itens) {
+
+						ItemDePedidoDAO.inserir(itemDePedido.getQtde(), itemDePedido.getValorUnitario(), idGerado,
+								itemDePedido.getNotebook().getSerialNote());
+					}
+
+					telaFinalizarPedido.confirmacao();
+					itens.clear();
+					total = 0;
+					telaMenuPrincipal.renovarMenu();
+					telaFinalizarPedido.dispose();
+					telaMenuPrincipal.setVisible(true);
+				}
+			}
+		}
+	}
+
+	/*
+	 * Subclasse que cadastra o cliente no banco de dados. Conferindo se todos os
+	 * campos estão preenchidos, e caso já esteja cadastrado o email, cpf ou
+	 * usuario, será disparada uma notificação informando o usuário.
+	 */
+	class RegistarClienteBD implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent arg0) {
+
+			String cpfFind = telaCadastroCliente.getTextField_11();
+			String usuarioFind = telaCadastroCliente.getTextField_3();
+			int validador = 0;
+			int condicional = 0;
+			String senha = telaCadastroCliente.getPasswordField();
+
+			if (telaCadastroCliente.getTextField() == null || telaCadastroCliente.getTextField().trim().equals("")) {
+
+				validador += 1;
+			}
+
+			if (telaCadastroCliente.getTextField_1() == null
+					|| telaCadastroCliente.getTextField_1().trim().equals("")) {
+
+				validador += 1;
+			}
+
+			if (telaCadastroCliente.getTextField_2() == null
+					|| telaCadastroCliente.getTextField_2().trim().equals("")) {
+
+				validador += 1;
+			}
+
+			if (telaCadastroCliente.getTextField_3() == null
+					|| telaCadastroCliente.getTextField_3().trim().equals("")) {
+
+				validador += 1;
+			}
+
+			if (telaCadastroCliente.getTextField_4() == null
+					|| telaCadastroCliente.getTextField_4().trim().equals("")) {
+
+				validador += 1;
+			}
+
+			if (telaCadastroCliente.getTextField_5() == null
+					|| telaCadastroCliente.getTextField_5().trim().equals("")) {
+
+				validador += 1;
+			}
+
+			if (telaCadastroCliente.getTextField_6() == null
+					|| telaCadastroCliente.getTextField_6().trim().equals("")) {
+
+				validador += 1;
+
+			}
+
+			if (telaCadastroCliente.getTextField_7() == null
+					|| telaCadastroCliente.getTextField_7().trim().equals("")) {
+
+				validador += 1;
+			}
+
+			if (telaCadastroCliente.getTextField_8() == null
+					|| telaCadastroCliente.getTextField_8().trim().equals("")) {
+
+				validador += 1;
+			}
+
+			if (telaCadastroCliente.getTextField_9() == null
+					|| telaCadastroCliente.getTextField_9().trim().equals("")) {
+
+				validador += 1;
+			}
+
+			if (telaCadastroCliente.getComboBox() == null || telaCadastroCliente.getComboBox().trim().equals("N/A")) {
+
+				validador += 1;
+			}
+
+			if (telaCadastroCliente.getTextField_11() == null
+					|| telaCadastroCliente.getTextField_11().trim().equals("")) {
+
+				validador += 1;
+			}
+
+			if (validador > 0) {
+
+				telaCadastroCliente.setCamposErro();
+				condicional += 1;
+			}
+
+			if (condicional == 0) {
+				if (ClienteDAO.ConferirCpf(cpfFind) == true) {
+
+					validador = +1;
+					telaCadastroCliente.setCpfErro();
+				}
+
+				if (UsuarioDAO.ConferirUsuario(usuarioFind) == true) {
+
+					validador = +1;
+					telaCadastroCliente.setUsuarioErro();
+				}
+
+				if (validar(telaCadastroCliente.getTextField_2()) == false) {
+
+					telaCadastroCliente.setEmailInvalido();
+					validador += 1;
+				}
+
+				if (senha == null || senha.trim().equals("")) {
+
+					validador += 1;
+				}
+			}
+
+			if (validador == 0) {
+
+				int tipo = 1;
+				UsuarioDAO.inserir(telaCadastroCliente.getTextField_3(), senha, tipo);
+				ClienteDAO.inserir(telaCadastroCliente.getTextField_11(), telaCadastroCliente.getTextField(),
+						telaCadastroCliente.getTextField_2(), telaCadastroCliente.getTextField_1(),
+						telaCadastroCliente.getTextField_3(), senha, tipo);
+				EnderecoDAO.inserir(telaCadastroCliente.getTextField_5(), telaCadastroCliente.getTextField_6(),
+						telaCadastroCliente.getTextField_7(), telaCadastroCliente.getTextField_8(),
+						telaCadastroCliente.getTextField_9(), telaCadastroCliente.getComboBox(),
+						telaCadastroCliente.getTextField_4(), telaCadastroCliente.getTextField_11());
+				boolean conf = telaCadastroCliente.setCadastroRealizado();
+
+				if (conf == true) {
+
+					telaCadastroCliente.dispose();
+					telaLogin.setVisible(true);
+					telaCadastroCliente.setTextField("");
+					telaCadastroCliente.setTextField_1("");
+					telaCadastroCliente.setTextField_2("");
+					telaCadastroCliente.setTextField_3("");
+					telaCadastroCliente.setTextField_4("");
+					telaCadastroCliente.setTextField_5("");
+					telaCadastroCliente.setTextField_6("");
+					telaCadastroCliente.setTextField_7("");
+					telaCadastroCliente.setTextField_8("");
+					telaCadastroCliente.setTextField_9("");
+					telaCadastroCliente.setTextField_11("");
+					telaCadastroCliente.setPasswordField("");
+				}
+			}
+		}
+	}
+}

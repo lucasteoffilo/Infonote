@@ -1,0 +1,14 @@
+package controller;
+
+import javax.swing.JFrame;
+
+public class ControleFuncionario{
+	public ControleFuncionario() {
+	}	
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

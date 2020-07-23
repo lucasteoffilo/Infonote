@@ -1,0 +1,1172 @@
+!SESSION 2019-01-23 12:06:28.978 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+This is a continuation of log file C:\Users\Lucas\Google Drive\Desenvolvimento\Java\Workspaces\InfoNote-master\.metadata\.bak_0.log
+Created Time: 2019-01-23 12:07:30.048
+
+!ENTRY org.eclipse.ui 2 0 2019-01-23 12:07:30.049
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-01-23 12:07:30.049
+!MESSAGE Cannot bind to an undefined command: plug-in='com.genuitec.eclipse.theming.ui', id='com.genuitec.myeclipse.help.darktheme.commandid'
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2019-01-23 12:07:43.018
+!MESSAGE A DevStyle Theme is being activated on this workspace; preparing colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2019-01-23 12:07:43.119
+!MESSAGE DevStyle has archived current color configurations to alternate preferences - will be restored when switching out of the DevStyle Theme
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-01-23 12:08:06.528
+!MESSAGE Removing part descriptor with the 'org.eclipse.ant.ui.views.AntView' id and the 'Ant' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-01-23 12:08:07.085
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Lucas'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-01-23 12:08:10.594
+!MESSAGE Removing part descriptor with the 'org.eclipse.buildship.ui.views.taskview' id and the 'Gradle Tasks' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY com.genuitec.eclipse.webclipse.evergreen 4 0 2019-01-23 12:08:12.698
+!MESSAGE <null>
+!STACK 0
+java.lang.NullPointerException
+	at com.genuitec.eclipse.webclipse.evergreen.EvergreenManager.checkEclipseVersion(EvergreenManager.java:102)
+	at com.genuitec.eclipse.webclipse.evergreen.internal.EvergreenUpdateProcess.run(EvergreenUpdateProcess.java:118)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-01-23 12:08:13.195
+!MESSAGE Removing part descriptor with the 'org.eclipse.buildship.ui.views.executionview' id and the 'Gradle Executions' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-01-23 12:08:13.851
+!MESSAGE Removing part descriptor with the 'org.eclipse.jdt.junit.ResultView' id and the 'JUnit' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-01-23 12:08:13.892
+!MESSAGE Removing part descriptor with the 'org.eclipse.pde.api.tools.ui.views.apitooling.views.apitoolingview' id and the 'API Tools' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-01-23 12:08:13.911
+!MESSAGE Removing part descriptor with the 'org.eclipse.pde.ui.PluginsView' id and the 'Plug-ins' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-01-23 12:08:13.922
+!MESSAGE Removing part descriptor with the 'org.eclipse.pde.ui.DependenciesView' id and the 'Plug-in Dependencies' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-01-23 12:08:13.924
+!MESSAGE Removing part descriptor with the 'org.eclipse.pde.ui.TargetPlatformState' id and the 'Target Platform State' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-01-23 12:08:13.927
+!MESSAGE Removing part descriptor with the 'org.eclipse.pde.ui.ImageBrowserView' id and the 'Plug-in Image Browser' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+!SESSION 2019-01-23 17:44:13.570 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ant.ui 4 0 2019-01-23 17:44:14.516
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ant.ui [97]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.5.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+       org.eclipse.jdt.junit [414]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+              org.eclipse.jdt.junit.runtime [416]
+                Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+              org.eclipse.jdt.junit.core [415]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.buildship.core 4 0 2019-01-23 17:44:14.520
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.buildship.core [99]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core
+    -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+       org.eclipse.jdt.junit.core [415]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+              org.eclipse.jdt.junit.runtime [416]
+                Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.buildship.ui 4 0 2019-01-23 17:44:14.525
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.buildship.ui [101]
+  Unresolved requirement: Require-Bundle: org.eclipse.buildship.core
+    -> Bundle-SymbolicName: org.eclipse.buildship.core; bundle-version="2.2.1.v20180125-1441"; singleton:="true"
+       org.eclipse.buildship.core [99]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+              org.eclipse.jdt.junit.core [415]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                     org.eclipse.jdt.junit.runtime [416]
+                       Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.datatools.connectivity.oda.template.ui 4 0 2019-01-23 17:44:14.534
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.connectivity.oda.template.ui [152]
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.ui
+    -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.10.400.v20180829-0709"; singleton:="true"
+       org.eclipse.pde.ui [722]
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.launching; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.pde.launching; bundle-version="3.7.200.v20180827-1331"; singleton:="true"
+              org.eclipse.pde.launching [718]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+                     org.eclipse.jdt.junit.core [415]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                            org.eclipse.jdt.junit.runtime [416]
+                              Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+              org.eclipse.jdt.junit [414]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.ant.ui; bundle-version="[3.1.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ant.ui; bundle-version="3.7.200.v20180822-0553"; singleton:="true"
+              org.eclipse.ant.ui [97]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.5.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.datatools.connectivity.ui.templates 4 0 2019-01-23 17:44:14.548
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.connectivity.ui.templates [158]
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.ui
+    -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.10.400.v20180829-0709"; singleton:="true"
+       org.eclipse.pde.ui [722]
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.launching; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.pde.launching; bundle-version="3.7.200.v20180827-1331"; singleton:="true"
+              org.eclipse.pde.launching [718]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+                     org.eclipse.jdt.junit.core [415]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                            org.eclipse.jdt.junit.runtime [416]
+                              Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+              org.eclipse.jdt.junit [414]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.ant.ui; bundle-version="[3.1.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ant.ui; bundle-version="3.7.200.v20180822-0553"; singleton:="true"
+              org.eclipse.ant.ui [97]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.5.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.ui.templates
+    -> Bundle-SymbolicName: org.eclipse.pde.ui.templates; bundle-version="3.6.300.v20180827-1331"; singleton:="true"
+       org.eclipse.pde.ui.templates [723]
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.ui; bundle-version="[3.3.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.10.400.v20180829-0709"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.datatools.sdk 4 0 2019-01-23 17:44:14.560
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.sdk [228]
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.ui
+    -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.10.400.v20180829-0709"; singleton:="true"
+       org.eclipse.pde.ui [722]
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.launching; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.pde.launching; bundle-version="3.7.200.v20180827-1331"; singleton:="true"
+              org.eclipse.pde.launching [718]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+                     org.eclipse.jdt.junit.core [415]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                            org.eclipse.jdt.junit.runtime [416]
+                              Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+              org.eclipse.jdt.junit [414]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.ant.ui; bundle-version="[3.1.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ant.ui; bundle-version="3.7.200.v20180822-0553"; singleton:="true"
+              org.eclipse.ant.ui [97]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.5.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.ui.templates
+    -> Bundle-SymbolicName: org.eclipse.pde.ui.templates; bundle-version="3.6.300.v20180827-1331"; singleton:="true"
+       org.eclipse.pde.ui.templates [723]
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.ui; bundle-version="[3.3.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.10.400.v20180829-0709"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.jdt.junit 4 0 2019-01-23 17:44:14.658
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.junit [414]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+       org.eclipse.jdt.junit.runtime [416]
+         Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+       org.eclipse.jdt.junit.core [415]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.jdt.junit.core 4 0 2019-01-23 17:44:14.661
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.junit.core [415]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+       org.eclipse.jdt.junit.runtime [416]
+         Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.jst.j2ee.ejb.annotations.xdoclet 4 0 2019-01-23 17:44:14.668
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.j2ee.ejb.annotations.xdoclet [492]
+  Unresolved requirement: Require-Bundle: org.eclipse.ant.ui; bundle-version="[3.2.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.ant.ui; bundle-version="3.7.200.v20180822-0553"; singleton:="true"
+       org.eclipse.ant.ui [97]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.5.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+              org.eclipse.jdt.junit [414]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                     org.eclipse.jdt.junit.runtime [416]
+                       Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+                     org.eclipse.jdt.junit.core [415]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.jst.j2ee.xdoclet.runtime 4 0 2019-01-23 17:44:14.675
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.j2ee.xdoclet.runtime [501]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ejb.annotations.xdoclet; bundle-version="[1.1.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ejb.annotations.xdoclet; bundle-version="1.2.300.v201802231941"; singleton:="true"
+       org.eclipse.jst.j2ee.ejb.annotations.xdoclet [492]
+         Unresolved requirement: Require-Bundle: org.eclipse.ant.ui; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ant.ui; bundle-version="3.7.200.v20180822-0553"; singleton:="true"
+              org.eclipse.ant.ui [97]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.5.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+                     org.eclipse.jdt.junit [414]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                            org.eclipse.jdt.junit.runtime [416]
+                              Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+                            org.eclipse.jdt.junit.core [415]
+                              Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.jst.server.generic.jonas 4 0 2019-01-23 17:44:14.676
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.server.generic.jonas [526]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.server.ui; bundle-version="[1.0.102,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.server.ui; bundle-version="1.1.300.v201309182039"; singleton:="true"
+       org.eclipse.jst.server.ui [531]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+              org.eclipse.jdt.junit [414]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                     org.eclipse.jdt.junit.runtime [416]
+                       Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+                     org.eclipse.jdt.junit.core [415]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.jst.server.tomcat.ui 4 0 2019-01-23 17:44:14.684
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.server.tomcat.ui [530]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.server.ui; bundle-version="[1.0.103,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.server.ui; bundle-version="1.1.300.v201309182039"; singleton:="true"
+       org.eclipse.jst.server.ui [531]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+              org.eclipse.jdt.junit [414]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                     org.eclipse.jdt.junit.runtime [416]
+                       Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+                     org.eclipse.jdt.junit.core [415]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.jst.server.ui 4 0 2019-01-23 17:44:14.687
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.server.ui [531]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.2.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+       org.eclipse.jdt.junit [414]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+              org.eclipse.jdt.junit.runtime [416]
+                Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+              org.eclipse.jdt.junit.core [415]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.mylyn.ide.ant 4 0 2019-01-23 17:44:14.695
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.ide.ant [634]
+  Unresolved requirement: Require-Bundle: org.eclipse.ant.ui
+    -> Bundle-SymbolicName: org.eclipse.ant.ui; bundle-version="3.7.200.v20180822-0553"; singleton:="true"
+       org.eclipse.ant.ui [97]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.5.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+              org.eclipse.jdt.junit [414]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                     org.eclipse.jdt.junit.runtime [416]
+                       Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+                     org.eclipse.jdt.junit.core [415]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.mylyn.java.tasks 4 0 2019-01-23 17:44:14.699
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.java.tasks [636]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit
+    -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+       org.eclipse.jdt.junit [414]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+              org.eclipse.jdt.junit.runtime [416]
+                Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+              org.eclipse.jdt.junit.core [415]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.mylyn.java.ui 4 0 2019-01-23 17:44:14.703
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.java.ui [637]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit
+    -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+       org.eclipse.jdt.junit [414]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+              org.eclipse.jdt.junit.runtime [416]
+                Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+              org.eclipse.jdt.junit.core [415]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.pde.api.tools.ui 4 0 2019-01-23 17:44:14.715
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.pde.api.tools.ui [707]
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.ui; bundle-version="[3.4.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.10.400.v20180829-0709"; singleton:="true"
+       org.eclipse.pde.ui [722]
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.launching; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.pde.launching; bundle-version="3.7.200.v20180827-1331"; singleton:="true"
+              org.eclipse.pde.launching [718]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+                     org.eclipse.jdt.junit.core [415]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                            org.eclipse.jdt.junit.runtime [416]
+                              Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+              org.eclipse.jdt.junit [414]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.ant.ui; bundle-version="[3.1.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ant.ui; bundle-version="3.7.200.v20180822-0553"; singleton:="true"
+              org.eclipse.ant.ui [97]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.5.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.pde.ds.annotations 4 0 2019-01-23 17:44:14.718
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.pde.ds.annotations [711]
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.ui; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.10.400.v20180829-0709"; singleton:="true"
+       org.eclipse.pde.ui [722]
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.launching; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.pde.launching; bundle-version="3.7.200.v20180827-1331"; singleton:="true"
+              org.eclipse.pde.launching [718]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+                     org.eclipse.jdt.junit.core [415]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                            org.eclipse.jdt.junit.runtime [416]
+                              Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+              org.eclipse.jdt.junit [414]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.ant.ui; bundle-version="[3.1.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ant.ui; bundle-version="3.7.200.v20180822-0553"; singleton:="true"
+              org.eclipse.ant.ui [97]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.5.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.pde.ds.ui 4 0 2019-01-23 17:44:14.721
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.pde.ds.ui [714]
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.ui; bundle-version="[3.3.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.10.400.v20180829-0709"; singleton:="true"
+       org.eclipse.pde.ui [722]
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.launching; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.pde.launching; bundle-version="3.7.200.v20180827-1331"; singleton:="true"
+              org.eclipse.pde.launching [718]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+                     org.eclipse.jdt.junit.core [415]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                            org.eclipse.jdt.junit.runtime [416]
+                              Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+              org.eclipse.jdt.junit [414]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.ant.ui; bundle-version="[3.1.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ant.ui; bundle-version="3.7.200.v20180822-0553"; singleton:="true"
+              org.eclipse.ant.ui [97]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.5.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.pde.genericeditor.extension 4 0 2019-01-23 17:44:14.725
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.pde.genericeditor.extension [716]
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.ui; bundle-version="[3.10.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.10.400.v20180829-0709"; singleton:="true"
+       org.eclipse.pde.ui [722]
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.launching; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.pde.launching; bundle-version="3.7.200.v20180827-1331"; singleton:="true"
+              org.eclipse.pde.launching [718]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+                     org.eclipse.jdt.junit.core [415]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                            org.eclipse.jdt.junit.runtime [416]
+                              Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+              org.eclipse.jdt.junit [414]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.ant.ui; bundle-version="[3.1.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ant.ui; bundle-version="3.7.200.v20180822-0553"; singleton:="true"
+              org.eclipse.ant.ui [97]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.5.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.pde.junit.runtime 4 0 2019-01-23 17:44:14.728
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.pde.junit.runtime [717]
+  Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.2.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+       org.eclipse.jdt.junit.runtime [416]
+         Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.pde.launching 4 0 2019-01-23 17:44:14.730
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.pde.launching [718]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+       org.eclipse.jdt.junit.core [415]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+              org.eclipse.jdt.junit.runtime [416]
+                Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.pde.ua.ui 4 0 2019-01-23 17:44:14.734
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.pde.ua.ui [721]
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.ui; bundle-version="[3.4.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.10.400.v20180829-0709"; singleton:="true"
+       org.eclipse.pde.ui [722]
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.launching; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.pde.launching; bundle-version="3.7.200.v20180827-1331"; singleton:="true"
+              org.eclipse.pde.launching [718]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+                     org.eclipse.jdt.junit.core [415]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                            org.eclipse.jdt.junit.runtime [416]
+                              Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+              org.eclipse.jdt.junit [414]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.ant.ui; bundle-version="[3.1.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ant.ui; bundle-version="3.7.200.v20180822-0553"; singleton:="true"
+              org.eclipse.ant.ui [97]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.5.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.pde.ui 4 0 2019-01-23 17:44:14.739
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.pde.ui [722]
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.launching; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.pde.launching; bundle-version="3.7.200.v20180827-1331"; singleton:="true"
+       org.eclipse.pde.launching [718]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+              org.eclipse.jdt.junit.core [415]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                     org.eclipse.jdt.junit.runtime [416]
+                       Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.2.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+       org.eclipse.jdt.junit [414]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.ant.ui; bundle-version="[3.1.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.ant.ui; bundle-version="3.7.200.v20180822-0553"; singleton:="true"
+       org.eclipse.ant.ui [97]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.5.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.wb.rcp 4 0 2019-01-23 17:44:14.993
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wb.rcp [1007]
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.ui
+    -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.10.400.v20180829-0709"; singleton:="true"
+       org.eclipse.pde.ui [722]
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.launching; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.pde.launching; bundle-version="3.7.200.v20180827-1331"; singleton:="true"
+              org.eclipse.pde.launching [718]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+                     org.eclipse.jdt.junit.core [415]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                            org.eclipse.jdt.junit.runtime [416]
+                              Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+              org.eclipse.jdt.junit [414]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.ant.ui; bundle-version="[3.1.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ant.ui; bundle-version="3.7.200.v20180822-0553"; singleton:="true"
+              org.eclipse.ant.ui [97]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.5.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.wb.rcp.SWT_AWT 4 0 2019-01-23 17:44:14.997
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wb.rcp.SWT_AWT [1008]
+  Unresolved requirement: Require-Bundle: org.eclipse.wb.rcp
+    -> Bundle-SymbolicName: org.eclipse.wb.rcp; bundle-version="1.9.1.201809061025"; singleton:="true"
+       org.eclipse.wb.rcp [1007]
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.ui
+           -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.10.400.v20180829-0709"; singleton:="true"
+              org.eclipse.pde.ui [722]
+                Unresolved requirement: Require-Bundle: org.eclipse.pde.launching; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.pde.launching; bundle-version="3.7.200.v20180827-1331"; singleton:="true"
+                     org.eclipse.pde.launching [718]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+                            org.eclipse.jdt.junit.core [415]
+                              Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                                   org.eclipse.jdt.junit.runtime [416]
+                                     Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.2.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+                     org.eclipse.jdt.junit [414]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.ant.ui; bundle-version="[3.1.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.ant.ui; bundle-version="3.7.200.v20180822-0553"; singleton:="true"
+                     org.eclipse.ant.ui [97]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.5.0,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.wb.rcp.databinding 4 0 2019-01-23 17:44:15.006
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wb.rcp.databinding [1009]
+  Unresolved requirement: Require-Bundle: org.eclipse.wb.rcp
+    -> Bundle-SymbolicName: org.eclipse.wb.rcp; bundle-version="1.9.1.201809061025"; singleton:="true"
+       org.eclipse.wb.rcp [1007]
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.ui
+           -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.10.400.v20180829-0709"; singleton:="true"
+              org.eclipse.pde.ui [722]
+                Unresolved requirement: Require-Bundle: org.eclipse.pde.launching; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.pde.launching; bundle-version="3.7.200.v20180827-1331"; singleton:="true"
+                     org.eclipse.pde.launching [718]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+                            org.eclipse.jdt.junit.core [415]
+                              Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                                   org.eclipse.jdt.junit.runtime [416]
+                                     Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.2.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+                     org.eclipse.jdt.junit [414]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.ant.ui; bundle-version="[3.1.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.ant.ui; bundle-version="3.7.200.v20180822-0553"; singleton:="true"
+                     org.eclipse.ant.ui [97]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.5.0,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.wb.rcp.databinding.emf 4 0 2019-01-23 17:44:15.012
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wb.rcp.databinding.emf [1010]
+  Unresolved requirement: Require-Bundle: org.eclipse.wb.rcp.databinding
+    -> Bundle-SymbolicName: org.eclipse.wb.rcp.databinding; bundle-version="1.9.1.201809061025"; singleton:="true"
+       org.eclipse.wb.rcp.databinding [1009]
+         Unresolved requirement: Require-Bundle: org.eclipse.wb.rcp
+           -> Bundle-SymbolicName: org.eclipse.wb.rcp; bundle-version="1.9.1.201809061025"; singleton:="true"
+              org.eclipse.wb.rcp [1007]
+                Unresolved requirement: Require-Bundle: org.eclipse.pde.ui
+                  -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.10.400.v20180829-0709"; singleton:="true"
+                     org.eclipse.pde.ui [722]
+                       Unresolved requirement: Require-Bundle: org.eclipse.pde.launching; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.pde.launching; bundle-version="3.7.200.v20180827-1331"; singleton:="true"
+                            org.eclipse.pde.launching [718]
+                              Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+                                   org.eclipse.jdt.junit.core [415]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                                          org.eclipse.jdt.junit.runtime [416]
+                                            Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.2.0,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+                            org.eclipse.jdt.junit [414]
+                              Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+                                -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.ant.ui; bundle-version="[3.1.0,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.ant.ui; bundle-version="3.7.200.v20180822-0553"; singleton:="true"
+                            org.eclipse.ant.ui [97]
+                              Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.5.0,4.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.wb.rcp
+    -> Bundle-SymbolicName: org.eclipse.wb.rcp; bundle-version="1.9.1.201809061025"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.wb.rcp.databinding.xwt 4 0 2019-01-23 17:44:15.013
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wb.rcp.databinding.xwt [1011]
+  Unresolved requirement: Require-Bundle: org.eclipse.wb.rcp
+    -> Bundle-SymbolicName: org.eclipse.wb.rcp; bundle-version="1.9.1.201809061025"; singleton:="true"
+       org.eclipse.wb.rcp [1007]
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.ui
+           -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.10.400.v20180829-0709"; singleton:="true"
+              org.eclipse.pde.ui [722]
+                Unresolved requirement: Require-Bundle: org.eclipse.pde.launching; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.pde.launching; bundle-version="3.7.200.v20180827-1331"; singleton:="true"
+                     org.eclipse.pde.launching [718]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+                            org.eclipse.jdt.junit.core [415]
+                              Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                                   org.eclipse.jdt.junit.runtime [416]
+                                     Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.2.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+                     org.eclipse.jdt.junit [414]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.ant.ui; bundle-version="[3.1.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.ant.ui; bundle-version="3.7.200.v20180822-0553"; singleton:="true"
+                     org.eclipse.ant.ui [97]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.5.0,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.wb.xwt
+    -> Bundle-SymbolicName: org.eclipse.wb.xwt; bundle-version="1.9.1.201809061025"; singleton:="true"
+       org.eclipse.wb.xwt [1028]
+         Unresolved requirement: Require-Bundle: org.eclipse.wb.rcp
+           -> Bundle-SymbolicName: org.eclipse.wb.rcp; bundle-version="1.9.1.201809061025"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.wb.rcp.databinding
+    -> Bundle-SymbolicName: org.eclipse.wb.rcp.databinding; bundle-version="1.9.1.201809061025"; singleton:="true"
+       org.eclipse.wb.rcp.databinding [1009]
+         Unresolved requirement: Require-Bundle: org.eclipse.wb.rcp
+           -> Bundle-SymbolicName: org.eclipse.wb.rcp; bundle-version="1.9.1.201809061025"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.wb.rcp.nebula 4 0 2019-01-23 17:44:15.020
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wb.rcp.nebula [1013]
+  Unresolved requirement: Require-Bundle: org.eclipse.wb.rcp
+    -> Bundle-SymbolicName: org.eclipse.wb.rcp; bundle-version="1.9.1.201809061025"; singleton:="true"
+       org.eclipse.wb.rcp [1007]
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.ui
+           -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.10.400.v20180829-0709"; singleton:="true"
+              org.eclipse.pde.ui [722]
+                Unresolved requirement: Require-Bundle: org.eclipse.pde.launching; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.pde.launching; bundle-version="3.7.200.v20180827-1331"; singleton:="true"
+                     org.eclipse.pde.launching [718]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+                            org.eclipse.jdt.junit.core [415]
+                              Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                                   org.eclipse.jdt.junit.runtime [416]
+                                     Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.2.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+                     org.eclipse.jdt.junit [414]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.ant.ui; bundle-version="[3.1.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.ant.ui; bundle-version="3.7.200.v20180822-0553"; singleton:="true"
+                     org.eclipse.ant.ui [97]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.5.0,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.wb.rcp.swing2swt 4 0 2019-01-23 17:44:15.022
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wb.rcp.swing2swt [1014]
+  Unresolved requirement: Require-Bundle: org.eclipse.wb.rcp
+    -> Bundle-SymbolicName: org.eclipse.wb.rcp; bundle-version="1.9.1.201809061025"; singleton:="true"
+       org.eclipse.wb.rcp [1007]
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.ui
+           -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.10.400.v20180829-0709"; singleton:="true"
+              org.eclipse.pde.ui [722]
+                Unresolved requirement: Require-Bundle: org.eclipse.pde.launching; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.pde.launching; bundle-version="3.7.200.v20180827-1331"; singleton:="true"
+                     org.eclipse.pde.launching [718]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+                            org.eclipse.jdt.junit.core [415]
+                              Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                                   org.eclipse.jdt.junit.runtime [416]
+                                     Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.2.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+                     org.eclipse.jdt.junit [414]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.ant.ui; bundle-version="[3.1.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.ant.ui; bundle-version="3.7.200.v20180822-0553"; singleton:="true"
+                     org.eclipse.ant.ui [97]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.5.0,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.wb.xwt 4 0 2019-01-23 17:44:15.025
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wb.xwt [1028]
+  Unresolved requirement: Require-Bundle: org.eclipse.wb.rcp
+    -> Bundle-SymbolicName: org.eclipse.wb.rcp; bundle-version="1.9.1.201809061025"; singleton:="true"
+       org.eclipse.wb.rcp [1007]
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.ui
+           -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.10.400.v20180829-0709"; singleton:="true"
+              org.eclipse.pde.ui [722]
+                Unresolved requirement: Require-Bundle: org.eclipse.pde.launching; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.pde.launching; bundle-version="3.7.200.v20180827-1331"; singleton:="true"
+                     org.eclipse.pde.launching [718]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+                            org.eclipse.jdt.junit.core [415]
+                              Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                                   org.eclipse.jdt.junit.runtime [416]
+                                     Unresolved requirement: Require-Bundle: org.junit; bundle-version="3.8.2"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.2.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+                     org.eclipse.jdt.junit [414]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.runtime; bundle-version="[3.4.100,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.runtime; bundle-version="3.4.800.v20180829-0645"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.100.v20180829-0645"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.ant.ui; bundle-version="[3.1.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.ant.ui; bundle-version="3.7.200.v20180822-0553"; singleton:="true"
+                     org.eclipse.ant.ui [97]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.5.0,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.11.100.v20180829-0645"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:447)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1685)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1627)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1558)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.equinox.app 0 0 2019-01-23 17:44:15.185
+!MESSAGE Product org.eclipse.epp.package.jee.product could not be found.
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-01-23 17:44:41.529
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Lucas'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.genuitec.eclipse.webclipse.evergreen 4 0 2019-01-23 17:44:41.588
+!MESSAGE <null>
+!STACK 0
+java.lang.NullPointerException
+	at com.genuitec.eclipse.webclipse.evergreen.EvergreenManager.checkEclipseVersion(EvergreenManager.java:102)
+	at com.genuitec.eclipse.webclipse.evergreen.internal.EvergreenUpdateProcess.run(EvergreenUpdateProcess.java:118)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

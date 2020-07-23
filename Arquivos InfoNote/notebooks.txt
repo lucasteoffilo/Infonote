@@ -1,0 +1,41 @@
+insert into notebook values('03289231','Sony','Notebook Sony - 8GB RAM - 500GB HD - i5 4690k','30','2800.00','C:\\Infonote\\src\\Img-Produtos\\03289231.jpg','2018.08.27');
+
+insert into notebook values('03289232','Dell','Notebook Samsung - 4GB RAM - 500GB HD - i5 4690k','30','3000.00','C:\\Infonote\\src\\Img-Produtos\\03289232.jpg','2018.08.27');
+
+insert into notebook values('03289233','Acer','Notebook Acer - 2GB RAM - 250GB HD - i5 4690k','150','2200.00','C:\\Infonote\\src\\Img-Produtos\\03289233.jpg','2018.08.27');
+
+insert into notebook values('03289234','ASUS','Notebook ASUS - 4GB RAM - 250GB HD - i5 4690k','30','2399.99','C:\\Infonote\\src\\Img-Produtos\\03289234.jpg','2018.08.27');
+
+insert into notebook values('03289235','Samsung','Notebook Samsung - 2GB RAM - 250GB HD - i5 4690k','150','2499.99','C:\\Infonote\\src\\Img-Produtos\\03289235.jpg','2018.08.27');
+
+insert into notebook values('03289236','Samsung','Notebook Samsung - 4GB RAM - 250GB HD - i5 4690k','30','2500.00','C:\\Infonote\\src\\Img-Produtos\\03289236.jpg','2018.08.27');
+
+insert into notebook values('03289237','Acer','Notebook Acer - 2GB RAM - 250GB HD - i5 4690k','30','2699.99','C:\\Infonote\\src\\Img-Produtos\\03289237.jpg','2018.08.27');
+
+insert into notebook values('03289238','Samsung','Notebook Samsung - 3GB RAM - 250GB HD - i5 4690k','30','2799.99','C:\\Infonote\\src\\Img-Produtos\\03289238.jpg','2018.08.27');
+
+insert into notebook values('03289239','Acer','Notebook Acer - 8GB RAM - 250GB HD - i5 4690k','30','2800.00','C:\\Infonote\\src\\Img-Produtos\\03289239.jpg','2018.08.27');
+
+insert into notebook values('03289240','Acer','Notebook Predator - 32GB RAM - 2TB HD - i9 7690k','8','14000.00','C:\\Infonote\\src\\Img-Produtos\\03289240.jpg','2018.08.27');
+
+insert into notebook values('03289241','ASUS','Notebook ASUS - 8GB RAM - 250GB HD - i5 4690k','30','3000.00','C:\\Infonote\\src\\Img-Produtos\\03289241.jpg','2018.08.27');
+
+insert into notebook values('03289242','Dell','Notebook Dell - 2GB RAM - 250GB HD - i5 4690k','30','3100.00','C:\\Infonote\\src\\Img-Produtos\\03289242.jpg','2018.08.27');
+
+insert into notebook values('03289243','HP','Notebook HP - 3GB RAM - 250GB HD - i5 4690k','30','2300.00','C:\\Infonote\\src\\Img-Produtos\\03289243.jpg','2018.08.27');
+
+insert into notebook values('03289244','HP','Notebook HP - 4GB RAM - 250GB HD - i5 4690k','30','2200.00','C:\\Infonote\\src\\Img-Produtos\\03289244.jpg','2018.08.27');
+
+insert into notebook values('03289245','Razer','Notebook Razer - 16GB RAM - 1TB HD - i7 6690k','15','9100.99','C:\\Infonote\\src\\Img-Produtos\\03289245.jpg','2018.08.27');
+
+insert into notebook values('03289246','Sony','Notebook Sony - 2GB RAM - 250GB HD - i5 4690k','30','2200.00','C:\\Infonote\\src\\Img-Produtos\\03289246.jpg','2018.08.27');
+
+insert into notebook values('03289247','Sony','Notebook Sony - 3GB RAM - 250GB HD - i5 4690k','30','2200.00','C:\\Infonote\\src\\Img-Produtos\\03289247.jpg','2018.08.27');
+
+insert into notebook values('03289248','Acer','Notebook Acer - 2GB RAM - 250GB HD - i5 4690k','30','1999.99','C:\\Infonote\\src\\Img-Produtos\\03289248.jpg','2018.08.27');
+
+insert into notebook values('03289249','Sony','Notebook Sony - 4GB RAM - 250GB HD - i5 4690k','30','3200.00','C:\\Infonote\\src\\Img-Produtos\\03289249.jpg','2018.08.27');
+
+
+
+
